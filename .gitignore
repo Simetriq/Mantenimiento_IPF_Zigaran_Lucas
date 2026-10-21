@@ -1,0 +1,30 @@
+# dependencias
+node_modules/
+
+# expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# nativo generado con prebuild
+android/
+ios/
+
+# cache de metro y logs
+.metro-health-check*
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# credenciales y archivos de firma
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# sistema
+.DS_Store
