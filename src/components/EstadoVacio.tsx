@@ -8,7 +8,6 @@ type Props = {
 export function EstadoVacio({ titulo, texto }: Props) {
   return (
     <View style={estilos.contenedor}>
-      <Text style={estilos.icono}>📭</Text>
       <Text style={estilos.titulo}>{titulo}</Text>
       <Text style={estilos.texto}>{texto}</Text>
     </View>
@@ -20,10 +19,6 @@ const estilos = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 48,
     paddingHorizontal: 24,
-  },
-  icono: {
-    fontSize: 40,
-    marginBottom: 12,
   },
   titulo: {
     fontSize: 17,

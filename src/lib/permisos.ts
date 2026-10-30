@@ -1,4 +1,4 @@
-﻿import { Camera } from 'expo-camera';
+import { Camera } from 'expo-camera';
 import * as ImagePicker from 'expo-image-picker';
 import * as Location from 'expo-location';
 import * as Notifications from 'expo-notifications';
@@ -28,12 +28,12 @@ export type Permiso = {
 
 export const INFO_PERMISO: Record<Recurso, { nombre: string; beneficio: string; aclaracion?: string }> = {
   camara: {
-    nombre: 'CÃ¡mara',
-    beneficio: 'Usamos tu cÃ¡mara para leer el QR del aula y sacar la foto del desperfecto.',
+    nombre: 'Cámara',
+    beneficio: 'Usamos tu cámara para leer el QR del aula y sacar la foto del desperfecto.',
   },
   ubicacion: {
-    nombre: 'UbicaciÃ³n',
-    beneficio: 'Usamos tu ubicaciÃ³n para marcar en quÃ© sector del edificio estÃ¡ el problema.',
+    nombre: 'Ubicación',
+    beneficio: 'Usamos tu ubicación para marcar en qué sector del edificio está el problema.',
   },
   fotos: {
     nombre: 'Fotos',
@@ -102,11 +102,11 @@ export function estadoLegible(estado: EstadoPermiso) {
   }
 }
 
-// Devuelve el matiz del permiso cuando no es un "sÃ­" completo.
+// Devuelve el matiz del permiso cuando no es un "sí" completo.
 export function matizDe(permiso: Permiso): string | null {
   if (permiso.accessPrivileges === 'limited') return 'Acceso limitado a fotos';
-  if (permiso.android?.accuracy === 'coarse') return 'UbicaciÃ³n aproximada';
-  if (permiso.ios?.accuracy === 'reduced') return 'UbicaciÃ³n aproximada';
+  if (permiso.android?.accuracy === 'coarse') return 'Ubicación aproximada';
+  if (permiso.ios?.accuracy === 'reduced') return 'Ubicación aproximada';
   return null;
 }
 

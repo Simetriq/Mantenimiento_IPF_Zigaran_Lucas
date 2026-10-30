@@ -48,7 +48,6 @@ export default function PantallaPermiso() {
     <ScrollView style={estilos.pantalla} contentContainerStyle={estilos.contenido}>
       <Stack.Screen options={{ title: info.nombre }} />
 
-      <Text style={estilos.icono}>{recursoValido === 'camara' ? '📷' : recursoValido === 'ubicacion' ? '📍' : recursoValido === 'fotos' ? '🖼️' : '🔔'}</Text>
       <Text style={estilos.titulo}>{info.nombre}</Text>
       <Text style={estilos.beneficio}>{info.beneficio}</Text>
 

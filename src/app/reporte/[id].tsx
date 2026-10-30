@@ -26,7 +26,6 @@ export default function DetalleReporte() {
   if (!reporte) {
     return (
       <View style={estilos.centro}>
-        <Text style={estilos.icono}>🔍</Text>
         <Text style={estilos.titulo}>No encontramos ese reporte</Text>
         <Text style={estilos.texto}>
           Puede que se haya borrado o que el id esté mal. Volvé a la lista y probá de nuevo.

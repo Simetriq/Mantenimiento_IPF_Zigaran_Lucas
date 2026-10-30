@@ -73,7 +73,6 @@ export default function Escanear() {
 
   return (
     <ScrollView style={estilos.pantalla} contentContainerStyle={estilos.contenido}>
-      <Text style={estilos.icono}>📷</Text>
       <Text style={estilos.titulo}>
         {bloqueado ? 'La cámara está bloqueada' : 'Necesitamos la cámara'}
       </Text>
